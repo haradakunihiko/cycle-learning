@@ -1,0 +1,2 @@
+Django==1.9
+graphene-django>=1.0
