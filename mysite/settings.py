@@ -51,6 +51,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'graphene_django',
     'quiz',
 )
 
@@ -133,3 +134,7 @@ USE_TZ = True
 
 STATIC_ROOT='static'
 STATIC_URL = '/static/'
+
+GRAPHENE = {
+    'SCHEMA': 'quiz.schema.schema' # Where your Graphene schema lives
+}

@@ -16,8 +16,10 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 from quiz.views import index
+from graphene_django.views import GraphQLView
 
 urlpatterns = [
     url(r'^$', index),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^graphql', GraphQLView.as_view(graphiql=True)),
 ]
