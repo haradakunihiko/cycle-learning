@@ -1,0 +1,40 @@
+{
+  "name": "cycle-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "create_schema.js",
+  "scripts": {
+    "prebuild": "rm -rf ./public/ & webpack --config webpack.dll.config.js",
+    "build": "webpack",
+    "watch": "webpack -w",
+    "lint": "eslint client",
+    "test": "echo test",
+    "schema": "node create_schema_json.js",
+    "start": "python manage.py runserver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haradakunihiko/cycle-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haradakunihiko/cycle-learning/issues"
+  },
+  "homepage": "https://github.com/haradakunihiko/cycle-learning#readme",
+  "dependencies": {
+    "graphql": "^0.10.3",
+    "graphql-relay": "^0.5.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.0",
+    "babel-plugin-relay": "^1.1.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.0.0"
+  }
+}

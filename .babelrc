@@ -1,0 +1,9 @@
+{
+  "passPerPreset": true,
+  "plugins": [
+    "relay"
+  ],
+  "presets": [
+    "react", "env"
+  ]
+}
